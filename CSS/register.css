@@ -1,0 +1,330 @@
+@font-face {
+    font-family: 'tradegothicbold';
+    src: url('/Fonts/Trade\ Gothic\ LT\ Bold\ Condensed\ No.\ 20.ttf.ttf');
+    src: url('/Fonts/TradeGothicLTBoldCondNo20.woff') format('woff2'),
+         url('/Fonts/TradeGothicLTBoldCondNo20.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+} /* TradeGothic LT Condensed Eighteen (Bold) */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'tradegothicbold';
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+@keyframes slideUp {
+    0% { 
+        transform: translateY(80%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+   
+}
+.top-container, .steps{
+    animation: slideUp ease-out 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+/* CSS for navbar, fill with color and set text size and color */
+header { 
+    display: inline-block;
+    width: 100%;
+    padding: 20px 0px; 
+    background-color: #731D34;
+    position: relative; 
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.42);
+}
+.sticky { 
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+nav { 
+    text-align: right;
+    margin-right: 2%;
+}
+nav ul li { 
+    margin-right: 1%;
+    display: inline-block;
+}
+nav ul li a { 
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+}
+nav ul li a:hover { 
+    color: #D3A04C;
+    transition: 0.5s;
+}
+
+.toggle-btn { 
+    width: 35px; 
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    display: none;
+}
+.toggle-btn span { 
+    width: 90%; 
+    height: 1.5px; 
+    background-color: white;
+    padding: 1.2px;
+    border-radius: 20px;
+    margin-bottom: 5px;
+    float: left;
+    
+}
+.active { 
+    color: #D3A04C;
+}
+.spartanwingslogo {
+    position: absolute;
+    left: 20px;
+    width: 50%;
+}
+
+.top-container {
+    text-align: center;
+    padding-top: 120px;
+}
+.top-container h3 { 
+    font-size: 55px;
+}
+.top-container h4 { 
+    font-size: 38px;
+    margin-bottom: 40px;
+}
+.steps {
+    text-align: center;
+}
+.step-header { 
+    margin: 0 10% 1% 10%; 
+    text-align: left;
+    font-size: 30px;
+    color: #FDC841;
+}
+strong { 
+    font-family: 'Roboto Condensed';
+    color: #FDC841;
+}
+.step p {
+    line-height: 30px;
+    text-align: left;
+    font-size: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.link {
+    color: #FDC841;
+    font-family: 'Roboto Condensed';
+}
+.link:hover { 
+    color: #731D34;
+}
+.step-two { 
+    margin-top: 4%;
+    padding-bottom: 10%;
+}
+.steps-container { 
+    color: white;
+    /*background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba( 0, 0, 0.3)), url(/Images/tessarunning.png); */
+    background-image: linear-gradient(rgba(70, 70, 70, 0.1), rgba(36, 36, 36, 0.363)), url(/Images/tessarunning.png);
+    background-repeat: none;
+    background-size: cover;
+} 
+
+p { 
+    font-family: 'Roboto Condensed';
+}
+
+/* Code for footer */
+
+.footer { 
+    background-color: #141414;
+    color: white;
+    text-align: center;
+    margin-bottom: -10px;
+    padding-bottom: 3%;
+}
+.footer-spartan { 
+    width: 55%;
+    margin-top: 25px;
+}
+.footer a { 
+    color: white;
+    text-decoration: none;
+}
+.street { 
+    font-size: 20px;
+}
+.social-media { 
+    margin-top: 5%;
+    margin-bottom: 30px;
+    display: inline-flex;
+}
+.sm { 
+    width: 50%;
+    margin: 0px 20px 0px 20px;
+}
+.link-container {
+    margin-bottom: 15px;
+}
+.footer-link:hover {
+    color: #cfa435;
+    transition: 0.5s;
+}
+
+@media(max-width: 450px) { 
+    nav { 
+        z-index: 999;
+    }
+    nav ul { 
+        position: relative;
+        z-index: 99;
+    }
+    
+    .spartanwingslogo { 
+        width: 200px;
+        margin-top: 5px;
+    }
+}
+@media (max-width: 500px) {
+    .steps-container { 
+        background-position-x: 110vw;
+    }
+    h3 { 
+        font-size: 55px;
+    }
+}
+@media (max-width: 991px) { 
+ /* Code for navbar */
+ .toggle-btn {
+    display: block;
+}
+header { 
+    padding-bottom: 70px;
+}  
+.toggle-btn {
+    margin-top: 15px;
+}
+nav { 
+    display: none;
+    width: 100%;
+    border-top: 1px solid white;
+    padding-top: 20px;
+    margin-top: 40px;
+}
+nav ul {
+    margin: 20px 20px 0px 20px; 
+    padding: 0;
+    transition: .5s; 
+}
+nav ul li{
+    padding: 15px 0px; 
+    width: 100%;
+    text-align: center;
+}
+nav ul li a { 
+    position: relative; 
+    display: block;  
+    text-decoration: none; 
+    color: white; 
+    transition: .5s; 
+    font-size: 22px;
+}
+nav ul li a:hover { 
+    padding: 10px 0px;
+    background: #D3A04C;
+    transition: 0.5s; 
+    color: white;
+}
+nav.show { 
+    display: block;
+    margin-top: 70px;
+}
+.title-bar { 
+    margin-top: -0.8%;
+}
+.spartanwingslogo { 
+    width: 200px;
+    margin-top: 5px;
+}
+    .steps-container { 
+        background-image: linear-gradient(rgba(70, 70, 70, 0.1), rgba(36, 36, 36, 0.363)), url(/Images/tessarunning.png);
+        background-position-x: -250vw;
+    }
+    .top-container { 
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: -20px;
+    }
+    .top-container h3 {
+        font-size: 44px;
+    }
+    .top-container h4 {
+        font-size: 24px;
+    }
+    .active { 
+        background-color: #D3A04C;
+        color: white;
+        padding: 10px 0;
+    }
+}
+
+@media(min-width: 992px) { 
+    .spartanwingslogo { 
+        width: 250px;
+    }
+    header { 
+        position: sticky;
+    }
+    nav { 
+        padding-bottom: 10px;
+    }
+    nav ul li a { 
+        margin-top: 15px;
+        font-size: 20px;
+    }
+
+    .footer-grid { 
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding-top: 30px;
+        
+    }
+    .foot-grid { 
+        margin-right: 15%;
+        margin-left: 15%;
+    }
+    .footer-spartan { 
+        width: 100%;
+    }
+    .social-media {
+        margin-top: 15%;
+        width: 100%;
+    }
+    .street { 
+        font-size: 20px;
+    }
+  
+    .link-grid { 
+        margin-top: 45px;
+    }
+    .link-container { 
+        font-size: 20px;
+    }
+    .step-line { 
+        display: none;
+    }
+}

@@ -1,0 +1,450 @@
+@font-face {
+    font-family: 'tradegothicbold';
+    src: url('/Fonts/Trade\ Gothic\ LT\ Bold\ Condensed\ No.\ 20.ttf.ttf');
+    src: url('/Fonts/TradeGothicLTBoldCondNo20.woff') format('woff2'),
+         url('/Fonts/TradeGothicLTBoldCondNo20.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+} /* TradeGothic LT Condensed Eighteen (Bold) */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'tradegothicbold';
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+/* 
+  *, *:before, *:after {
+    box-sizing: border-box;
+  } */
+.test{
+    animation: fadeInAnimation ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+/* CSS for navbar, fill with color and set text size and color */
+header { 
+    display: inline-block;
+    width: 100%;
+    padding: 20px 0px; 
+    background-color: #731D34;
+    position: relative; 
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.42);
+}
+.sticky {    
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+nav { 
+    text-align: right;
+    margin-right: 2%;
+}
+nav ul li { 
+    margin-right: 1%;
+    display: inline-block;
+}
+nav ul li a { 
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+}
+nav ul li a:hover { 
+    color: #D3A04C;
+    transition: 0.5s;
+}
+
+.toggle-btn { 
+    width: 35px; 
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    display: none;
+}
+.toggle-btn span { 
+    width: 90%; 
+    height: 1.5px; 
+    background-color: white;
+    padding: 1.2px;
+    border-radius: 20px;
+    margin-bottom: 5px;
+    float: left;
+    
+}
+
+
+.spartanwingslogo {
+    position: absolute;
+    left: 20px;
+    width: 50%;
+}
+.test {
+    background-color: #FDC841;
+    
+    padding: 20vh 5% 5% 5%;
+}
+
+
+.test h3 {
+    text-align: center;
+    font-size: 55px;
+    color: white;
+    padding: 20px 0 50px 0;;
+}
+.preview {
+  width: 60%;
+  overflow: hidden;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.column { 
+    margin-bottom: -4px;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  padding: 10px 10px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.815);
+}
+
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 20px auto;
+  padding: 0 0 0 0;
+  width: 100%;
+  max-width: 1200px;
+}
+.slide.long { 
+   text-align: center;
+
+}
+.long { 
+    margin-top: -100px;
+    width: 70% !important;
+}
+.slide {
+  display: none;
+  z-index: 999;
+}
+
+.image-slide {
+  width: 80%;
+  z-index: 999;
+}
+img.preview { 
+    margin-bottom: 10px;
+}
+
+
+.modal-preview {
+  width: 100%;
+}
+
+img.preview, img.modal-preview {
+  opacity:1;
+}
+
+img.active,
+.preview:hover,
+.modal-preview:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} 
+
+.close {
+  color: white;
+  position: absolute;
+  top: 120px;
+  right: 45px;
+  font-size: 35px;
+  font-weight: bold;
+  z-index: 999;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.previous,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.previous:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.footer { 
+    background-color: #141414;
+    color: white;
+    text-align: center;
+    margin-bottom: -10px;
+    padding-bottom: 3%;
+}
+.footer-spartan { 
+    width: 55%;
+    margin-top: 25px;
+}
+.footer a { 
+    color: white;
+    text-decoration: none;
+}
+.street { 
+    font-size: 20px;
+}
+.social-media { 
+    margin-top: 5%;
+    margin-bottom: 30px;
+    display: inline-flex;
+}
+.sm { 
+    width: 50%;
+    margin: 0px 20px 0px 20px;
+}
+.link-container {
+    margin-bottom: 15px;
+}
+.footer-link:hover {
+    color: #cfa435;
+    transition: 0.5s;
+}
+
+.test-gallery { 
+    line-height: 0;
+    column-count: 5;
+    gap: 5px;
+}
+.test-gallery img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+    
+    
+}
+
+@media (max-width: 500px) {
+    .image-slide { 
+        width: 100%;
+        margin-top: 15px;
+    }
+    .long { 
+        margin-top: -100px;
+        width: 100% !important;
+    }
+    .close { 
+        top: 30px;
+        right: 30px;
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 991px) { 
+    .active { 
+        background-color: #D3A04C;
+        color: white;
+        padding: 10px 0;
+    }
+    /* Code for navbar */
+    .toggle-btn {
+        display: block;
+    }
+    header { 
+        padding-bottom: 70px;
+    }  
+    .toggle-btn {
+        margin-top: 15px;
+    }
+    nav { 
+        display: none;
+        width: 100%;
+        border-top: 1px solid white;
+        padding-top: 20px;
+        margin-top: 40px;
+    }
+    nav ul {
+        margin: 20px 20px 0px 20px; 
+        padding: 0;
+        transition: .5s; 
+    }
+    nav ul li{
+        padding: 15px 0px; 
+        width: 100%;
+        text-align: center;
+    }
+    nav ul li a { 
+        position: relative; 
+        display: block;  
+        text-decoration: none; 
+        color: white; 
+        transition: .5s; 
+        font-size: 22px;
+    }
+    nav ul li a:hover { 
+        padding: 10px 0px;
+        background: #D3A04C;
+        transition: 0.5s; 
+        color: white;
+    }
+    nav.show { 
+        display: block;
+        margin-top: 70px;
+    }
+    .title-bar { 
+        margin-top: -0.8%;
+    }
+    .spartanwingslogo { 
+        width: 200px;
+        margin-top: 5px;
+    }
+    /* Code for navbar */
+    .row {
+        flex-direction: column;
+    }
+    .gallery { 
+        margin-top: -4px;
+    }
+    
+    .modal-content { 
+        padding-top: 25vh;
+        width: 100%;
+    }
+    .previous {
+        top: 38vh;
+    }
+    .next { 
+        top: 38vh;
+    }
+    .test-gallery { 
+        column-count: 1;
+    }
+    .test { 
+        margin-top: -10px;
+    }
+ 
+   
+}
+
+  
+@media(min-width: 992px) { 
+    .spartanwingslogo { 
+        width: 250px;
+    }
+    header { 
+        position: sticky;
+    }
+    nav { 
+        padding-bottom: 10px;
+    }
+    nav ul li a { 
+        margin-top: 15px;
+        font-size: 20px;
+    }
+
+    .footer-grid { 
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding-top: 30px;
+        
+    }
+    .foot-grid { 
+        margin-right: 15%;
+        margin-left: 15%;
+    }
+    .footer-spartan { 
+        width: 100%;
+    }
+    .social-media {
+        margin-top: 15%;
+        width: 100%;
+    }
+    .street { 
+        font-size: 20px;
+    }
+  
+    .link-grid { 
+        margin-top: 45px;
+    }
+    .link-container { 
+        font-size: 20px;
+    }
+    .close { 
+        top: 110px;
+        right: 90px;
+        font-size: 40px;
+        position: fixed;
+    }
+    .image-slide { 
+        width: 60%;
+        margin-top: 110px;
+    }
+    .long {
+        margin-top: 70px; 
+        width: 30% !important;
+    }
+    
+    .active { 
+        background-color: #731D34;
+        color: #D3A04C;
+    }
+    .previous { 
+        top: 50vh;
+        position: fixed;
+    }
+    .next { 
+        top: 50vh; 
+        right: 6vw;
+        position: fixed; 
+    }
+  
+}

@@ -1,1 +1,1225 @@
+@font-face {
+    font-family: 'tradegothicbold';
+    src: url('/Fonts/Trade\ Gothic\ LT\ Bold\ Condensed\ No.\ 20.ttf.ttf');
+    src: url('/Fonts/TradeGothicLTBoldCondNo20.woff') format('woff2'),
+         url('/Fonts/TradeGothicLTBoldCondNo20.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+} /* TradeGothic LT Condensed Eighteen (Bold) */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'tradegothicbold';
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+@keyframes slideUp {
+    0% { 
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+   
+}
+
+/*body {
+    animation: fadeInAnimation ease 1.5s;
+
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+} */
+
+.intro-container-stuff { 
+    animation: 1s ease-out 1 slideUp;
+}
+.intro {
+    padding-top: 87px;
+}
+
+
+/* New Revised Navbar Code */
+
+.header { 
+    background: #731D34;
+    overflow: hidden;
+    height: 60px;
+    width: 100%;
+    z-index: 5;
+    position: fixed;
+    transition: all 0.4s ease-out, background 1s ease-out;
+	padding-bottom: 2px;
+}
+
+.header.menu-open { 
+    height: 100%; 
+    background: #731D34; 
+    transition: all 0.45s ease-out, background 0.8s ease-out;
+}
+
+/* Menu List items */
+.navbar-menu {
+	clear: both;
+}
+.navbar-menu ul li a { 
+    color: white;
+}
+.navbar-menu ul li a.active { 
+    color: #D3A04C;
+}
+.navbar-menu ul li a.active:hover { 
+    color: white;
+}
+.header ul.menu {
+	position: relative;
+	display: block;
+	padding: 0px 40px 0;
+	list-style: none;
+}
+.header ul.menu li.menu-item a:first-child { 
+    margin-top: 25px;
+}
+.header ul.menu li.menu-item a {
+    text-align: center;
+	display: block;
+	position: relative;
+	text-decoration: none;
+	font-size: 22px;
+    line-height: 1.5;
+    transition: 0.4s; 
+	width: 100%;
+	-webkit-tap-highlight-color: transparent;
+}
+.header ul.menu li.menu-item a:hover { 
+    background: #D3A04C;
+    transition: 0.3s; 
+    padding: 10px 0;
+}
+
+.header ul.menu li.menu-item { 
+    /*border-bottom: 1px solid rgb(206, 206, 206); */
+    margin-top: 5px; 
+    opacity: 0;
+    transition: opacity 0.6s cubic-bezier(0.4, 0.0.1, 0.165, 0.99);
+    transition: transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99), opacity 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+	transition: transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99), opacity 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99), -webkit-transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+
+}
+.header ul.menu li.menu-item:nth-child(1) {
+	transition-delay: 0.35s;
+}
+.header ul.menu li.menu-item:nth-child(2) {
+	transition-delay: 0.3s;
+}
+.header ul.menu li.menu-item:nth-child(3) {
+	transition-delay: 0.25s;
+}
+.header ul.menu li.menu-item:nth-child(4) {
+	transition-delay: 0.2s;
+}
+.header ul.menu li.menu-item:nth-child(5) {
+	transition-delay: 0.15s;
+}
+.header ul.menu li.menu-item:nth-child(6) {
+	transition-delay: 0.1s;
+}
+.header ul.menu li.menu-item:nth-child(7) {
+	transition-delay: 0.05s;
+}
+.header ul.menu li.menu-item:nth-child(8) {
+	transition-delay: 0.02s;
+}
+.header.menu-open ul.menu li.menu-item {
+	opacity: 1;
+}
+.header.menu-open ul.menu li.menu-item:nth-child(1) {
+	transition-delay: 0.05s;
+}
+.header.menu-open ul.menu li.menu-item:nth-child(2) {
+	transition-delay: 0.1s;
+}
+.header.menu-open ul.menu li.menu-item:nth-child(3) {
+	transition-delay: 0.15s;
+}
+.header.menu-open ul.menu li.menu-item:nth-child(4) {
+	transition-delay: 0.2s;
+}
+.header.menu-open ul.menu li.menu-item:nth-child(5) {
+	transition-delay: 0.25s;
+}
+.header.menu-open ul.menu li.menu-item:nth-child(6) {
+	transition-delay: 0.3s;
+}
+.header.menu-open ul.menu li.menu-item:nth-child(7) {
+	transition-delay: 0.35s;
+}
+.header.menu-open ul.menu li.menu-item:nth-child(8) {
+	transition-delay: 0.4s;
+}
+
+.spartanlogo-header img { 
+	width: 200px;
+	margin: 12px 0 0 10px;
+	float: left;
+}
+/* Menu Icon */
+.icon-container {
+	position: relative;
+	display: inline-block;
+	z-index: 2;
+	float: right;
+	height: 55px;
+	width: 55px;
+	cursor: pointer;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+	transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+}
+.icon-container #menuicon {
+	width: 20px;
+	height: 10px;
+	position: relative;
+	display: block;
+	margin: -4px auto 0;
+	top: 50%;
+}
+#menuicon .bar {
+	width: 100%;
+	height: 1px;
+	padding: 0.5px;
+	display: block;
+	position: relative;
+	background: #fff;
+	transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+}
+#menuicon .bar.bar1 {
+	-webkit-transform: translateY(0px) rotate(0deg);
+	transform: translateY(0px) rotate(0deg);
+}
+#menuicon .bar.bar2 {
+	-webkit-transform: translateY(6px) rotate(0deg);
+	transform: translateY(6px) rotate(0deg);
+}
+#menuicon .bar.bar3 {
+	-webkit-transform: translateY(12px) rotate(0deg);
+	transform: translateY(12px) rotate(0deg);
+}
+.menu-open .icon-container {
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+.menu-open .icon-container #menuicon .bar {
+	transition: all 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+	transition-delay: 0.1s;
+}
+.menu-open .icon-container #menuicon .bar.bar1 {
+	-webkit-transform: translateY(4px) rotate(45deg);
+	transform: translateY(4px) rotate(45deg);
+	width: 26px;
+}
+.menu-open .icon-container #menuicon .bar.bar2 {
+	-webkit-transform: translateY(3px) rotate(-45deg);
+	transform: translateX(500px) rotate(90deg);
+	opacity: 0;
+	transition: 0.4s;
+}
+.menu-open .icon-container #menuicon .bar.bar3 {
+	-webkit-transform: translateY(3px) rotate(-45deg);
+	transform: translateY(3px) rotate(-45deg);
+	width: 26px;
+}
+hr { 
+	position: relative;
+	margin: 0 20px;
+	top: 8px;
+
+	visibility: hidden;
+}
+.menu-open hr { 
+	visibility: visible;
+    transition: 0.45s ease-out;
+}
+/* End New Navbar Code */
+
+
+
+
+/* Code for the top container */
+.bg { 
+    width: 90%;
+    margin-top: -1%;
+}
+.intro-container { 
+    background-image: url(/Images/matthewjumpingmaroon.png);
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    margin-top: -25px;
+  /*  position: fixed;
+    z-index: -10; */
+
+
+}
+.intro-container-stuff { 
+    text-align: center;
+}
+
+.intro-text {
+   /*font-size: 45px;
+    color: white;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    text-align: center;
+    color: white;
+    padding-top: 5%;
+    
+}
+
+.intro-button { 
+    /*background: #FDC841;
+    width: calc(100% - 2em);
+    display: block;
+    color: #fff;
+    border-radius: 40em;
+    padding: 1%;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 3% auto 7%;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4; */
+    text-align: center;
+    width: calc(100% - 2em);
+    display: block;
+    color: #fff;
+    border-radius: 40em;
+    padding: 1%;
+    background-color: #FDC841;
+    text-decoration: none;
+    margin: 3% auto 7%;
+    position: absolute;
+    left: 50%;
+    
+    z-index: 1;
+    cursor: pointer;
+    font-size: 1.5em; 
+    transform: translate(-50%, -270%);
+}
+
+.intro-button:hover { 
+    background-color: #D3A04C;
+    transition: 0.5s;
+}
+
+/* Code for the Yellow Container */ 
+.blaise { 
+    width: 30%;
+}
+.yellow-container { 
+    text-align: center;
+    background-color: #FDC841;
+    color: #731D34;
+    margin-top: 0;
+    padding-bottom: 5%;
+    z-index: 0;
+}
+.yellow-container h3 {
+    font-size: 55px;
+}
+.yellow-container p { 
+    font-size: 20px;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+.yellow-container a { 
+    width: 100%;
+    text-decoration: none;
+    width: calc(100% - 2em);
+    display: block;
+    color: #fff;
+    background-color: #403F3F;
+    box-shadow: 5px 5px rgb(15, 15, 15);
+    border-radius: 40em;
+    padding: 1%;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 3% auto 7%;
+}
+.yellow-container a:hover { 
+    background-color: #616161;
+    box-shadow: 5px 5px rgb(48, 48, 48);
+    transition: 0.3s;
+    /*background-color: rgb(15, 15, 15); */
+}
+.yellow-container-grid { 
+    animation: 1s ease-out 1 slideUp;
+}
+.run {
+    background-color: #141414;
+    color: white;
+    text-align: center;
+    padding: 10% 0% 20% 0%;
+    z-index: 0;
+    margin-bottom: -50px;
+}
+.run h2 { 
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.run p { 
+    font-size: 24px;
+    margin: 0% 5% 5% 5%;
+}
+.wings-container { 
+    z-index: -1;
+    text-align: center;
+}
+.register-button {
+    text-align: center;
+    z-index: 99;
+    width: 100%;
+    text-decoration: none;
+    width: calc(100% - 2em);
+    display: inline-block;
+    color: #fff;
+    background-color: #cfa435;
+    border-radius: 0em;
+    padding: 1%;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 0% auto 7%;
+    transform: translateY(40px);
+}
+.register-button:hover { 
+    background-color: #731D34;
+    transition: 0.5s;
+}
+.run img { 
+    z-index: 1;
+    float: right;
+    width: 200px;
+    margin-top: -70px;
+    margin-right: 0px;
+}
+
+/*News Section Code */
+.news { 
+    text-align: center;
+    font-size: 3.5vh; 
+    color:rgb(20, 46, 83, 1);
+    margin: 3% 0% -3% 0%;
+    background-color: white;
+    padding: 6vh 0;
+    width: 100%;
+
+}
+.news-container { 
+    display: grid;
+    background-color: white;
+}
+
+
+.news img { 
+    width: 70%; 
+}
+.news h3 { 
+    font-size: 45px;
+    color: #731D34;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.headline { 
+    color: #731D34;
+    margin: 4% 13% 3% 15%;
+    text-align: left;
+}
+.headline:hover { 
+    text-decoration: underline;
+}
+.news a {
+    text-decoration: none;
+}
+
+/*Coaches section 
+.coaches { 
+    padding-top: 10px;
+    padding-bottom: 20px;
+    width: 100%;
+    background-color: #731D34;
+    margin: 0;
+}
+.coach { 
+    text-align: center;
+    margin: 0;
+}
+.coach img { 
+    width: 100%;
+}
+.coaches h3 { 
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    color: white;
+    padding-bottom: 10px;
+}
+.coaches h4 { 
+    color: white;
+    font-size: 40px;
+    margin-top: -50px;
+    margin-bottom: 30px;
+}
+.coaches p { 
+    color: white;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+.coaches a { 
+    color: #FDC841;
+    font-size: 30px;
+}
+
+
+.coach {
+    position: relative;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .coach-text{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: #731d34c5;
+  }
+  
+  .coach:hover .coach-text {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+*/
+.coaches-container h3 { 
+    padding: 50px 0;
+    font-size: 60px;
+}
+
+.coach-list {
+    
+    margin: 0 auto;
+    padding: 0 0 30px 0;
+    font-size: 0;
+    list-style: none;
+    background-color: #731D34;
+}
+.coach-list-li { 
+    display: inline-block;
+    width: 25%;
+    vertical-align: middle;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.coach-pic { 
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.wrapper { 
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+.rig-img { 
+    display: block;
+    width: 100%;
+    height: auto;
+    border: none;
+    transform: scale(1);
+    transition: all 1s;
+}
+.coach-list-li:hover .coach-pic { 
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+.overlay { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background: #731D34;
+    opacity: 0;
+}
+.coach-list-li:hover .overlay { 
+    opacity: 0.8;
+}
+.coach-text { 
+    cursor: default;
+    display: block;
+    color: white;
+    box-sizing: border-box;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    top: 20%;
+    transform: translateY(-30px);
+    opacity: 0;
+}
+.coach-list-li:hover .coach-text { 
+    transform: translateY(-10px);
+    opacity: 1;
+    transition: 0.5s ease;
+}
+.coaches-container h3 { 
+    font-size: 55px;
+    text-align: center;
+    color: white;
+}
+.coaches-container h4 { 
+    text-align: center;
+    color: white;
+    font-size: 5q0px;
+}
+p {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.coaches-container { 
+    background-color: #731D34;
+    padding-bottom: 50px;
+}
+.read-more { 
+    color: #FDC841;
+    display: block;
+    font-size: 30px;
+    box-sizing: border-box;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    top: 140%;
+    transform: translateY(-30px);
+    opacity: 0;
+}
+.read-more:nth-child(2) {
+    display: block;
+    font-size: 30px;
+    box-sizing: border-box;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    top: 60%;
+    transform: translateY(-30px);
+    opacity: 0;
+    
+}
+
+.coach-list-li:hover .read-more:nth-child(2) { 
+    transform: translateY(10px);
+    transition: 0.5s;
+}
+.coach-list-li:hover .read-more { 
+    opacity: 1;
+}
+/*Contact div */
+.contact { 
+    background-image: url(/Images/tessarunning.png);
+    width: 100%;
+    height: 50vh; 
+    overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    color: white;
+    text-align: center;
+} 
+.contact h3 { 
+    font-size: 45px;
+    padding-top: 50px;
+}
+.contact p { 
+    font-size: 18px;
+    margin-top: 20px;
+}
+.contact-button { 
+    color: white; 
+    text-decoration: none;
+    width: calc(100% - 3em);
+    background: #cfa435;
+    display: block;
+    border-radius: 0em;
+    margin-left: 2%;
+    margin-top: 8%;
+    padding: 10px 0px 10px 0px;
+    font-size: 24px;
+}
+.contact-button:hover { 
+    background-color: #731D34;
+    transition: 0.5s ease; 
+}
+.footer { 
+    background-color: #141414;
+    color: white;
+    text-align: center;
+    margin-bottom: -10px;
+    padding-bottom: 3%;
+}
+.footer-spartan { 
+    width: 55%;
+    margin-top: 25px;
+}
+.footer a { 
+    color: white;
+    text-decoration: none;
+}
+.street { 
+    font-size: 20px;
+}
+.social-media { 
+    margin-top: 5%;
+    margin-bottom: 30px;
+    display: inline-flex;
+}
+.sm { 
+    width: 50%;
+    margin: 0px 20px 0px 20px;
+}
+.link-container {
+    margin-bottom: 15px;
+}
+.footer-link:hover {
+    color: #cfa435;
+    transition: 0.5s;
+}
+
+
+/*Media queries for responsiveness */
+
+@media(max-width: 371px) { 
+    .spartanwingslogo { 
+        width: 55%;
+        margin-top: 15px;
+    }
+    .intro-text { 
+        margin-top: -8%;
+    }
+    .intro-button { 
+        margin-top: -10%;
+    }
+}
+@media(max-width: 450px) { 
+    nav { 
+        z-index: 999;
+    }
+    nav ul { 
+        position: relative;
+        z-index: 99;
+    }
+    
+    .spartanwingslogo { 
+        width: 200px;
+        margin-top: 5px;
+    }
+    .intro-text { 
+        position :relative;
+        margin-top: 8vh;
+        font-size: 60px;
+        z-index: 2;
+    }
+    .intro-button { 
+        position: relative;
+        margin-left: 0%;
+        margin-top: 15vh;
+        border-radius: 0;
+        z-index: 1;
+    }
+    .intro-container { 
+        height: 90vh;
+        margin-top: 0px;
+    }
+    .intro-container-stuff { 
+        margin-top: 20vh;
+    }
+    .yellow-container { 
+        padding: 30px 0px 30px 0px;
+    }
+    .yellow-container a {
+        margin-top: 30px;
+        border-radius: 0;
+    }
+    .yellow-container p {
+        font-size: 22px;
+    }
+    .news-article { 
+        margin-bottom: 5%;
+    }
+    .register-button { 
+        border-radius: 0;
+    }
+    .register-button:hover, .register-button:active { 
+        background-color: #731D34;
+    }
+    .news h3 { 
+        font-size: 60px;
+        padding-top: 20px;
+    }
+    
+    .contact-button { 
+        border-radius: 0;
+        display: block;
+        margin-left: 8%;
+    }
+    .contact { 
+        padding-bottom: 30px;
+    }
+    .contact h3 { 
+        font-size: 50px;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .contact p {
+        font-size: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .footer { 
+        padding-bottom: 40px;
+    }
+    .coaches-container { 
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .coach-list-li { 
+        width: 100%;
+    }
+    .coach-text h4 { 
+        font-size: 40px;
+    }
+    .coach-text h6 { 
+        font-size: 24px;
+    }
+    .coach-text p {
+        margin: 0 20px;
+        font-size: 18px;
+    }
+    .run { 
+        padding-bottom: 120px;
+    }
+    
+}
+
+
+@media(min-width: 451px) and (max-width: 991px) { 
+     /* Code for navbar */
+     .toggle-btn {
+        display: block;
+    }
+    header { 
+        padding-bottom: 70px;
+    }  
+    .toggle-btn {
+        margin-top: 15px;
+    }
+    nav { 
+        display: none;
+        width: 100%;
+        border-top: 1px solid white;
+        padding-top: 20px;
+        margin-top: 40px;
+    }
+    nav ul {
+        margin: 20px 20px 0px 20px; 
+        padding: 0;
+        transition: .5s; 
+    }
+    nav ul li{
+        padding: 15px 0px; 
+        width: 100%;
+        text-align: center;
+    }
+    nav ul li a { 
+        position: relative; 
+        display: block;  
+        text-decoration: none; 
+        color: white; 
+        transition: .5s; 
+        font-size: 22px;
+    }
+    nav ul li a:hover { 
+        padding: 10px 0px;
+        background: #D3A04C;
+        transition: 0.5s; 
+        color: white;
+    }
+    nav.show { 
+        display: block;
+        margin-top: 70px;
+    }
+    .title-bar { 
+        margin-top: -0.8%;
+    }
+    .spartanwingslogo { 
+        width: 200px;
+        margin-top: 5px;
+    }
+    .intro { 
+        z-index: 3;
+    }
+    .intro-text {
+        position: relative;
+        font-size: 60px;
+        margin-top: 20vh;
+        z-index: 1;
+    }
+    .intro-button {
+        position: relative;
+        border-radius: 0;
+        margin-top: 30vh;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 26px;
+        width: 50%;
+        z-index: 2;
+        margin-left: 0%;
+
+    }
+    .yellow-container h3 { 
+        margin-bottom: 3vh;
+        font-size: 60px;
+    }
+    .yellow-container a {
+        border-radius: 0;
+        font-size: 26px;
+        margin-top: 35px;
+        width: 50%;
+    }
+    .yellow-container p {
+        font-size: 24px;
+    }
+    .register-button { 
+        border-radius: 0;
+        font-size: 30px;
+        width: 70%;
+        transform: translateY(20px);
+    }
+    .run p { 
+        margin-top: 25px;
+    }
+    .run h2 { 
+        font-size: 50px;
+    }
+    .run img { 
+        width: 40%;
+        margin-top: -120px;
+    }
+    .news h3 { 
+        font-size: 70px;
+    }
+    .news p { 
+        margin-top: 10px;
+        margin-bottom: 50px;
+        font-size: 30px;
+    }
+    .news img { 
+        width: 70%;
+    }
+    .headline {
+        font-size: 30px;
+    }
+    .coaches img { 
+        width: 100%;
+    }
+    .coach-text p { 
+        font-size: 40px;
+    }
+  
+    .coaches h3 { 
+        font-size: 65px;
+    }
+    .coaches h4 { 
+        font-size: 50px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .coaches p { 
+        font-size: 28px;
+        margin-bottom: 5vh;
+    }
+    .coaches a { 
+        font-size: 36px;
+    }
+    .contact-button { 
+        border-radius: 0;
+        text-decoration: none;
+        margin-left: 35px;
+    }
+    .contact { 
+        padding-bottom: 30px;
+        text-align: center;
+    }
+    .contact p { 
+        font-size: 23px;
+    }
+    .footer-spartan { 
+        width: 40%;
+        margin-bottom: 3%;
+    }
+    .coach-container{ 
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .coach-list-li { 
+        width: 100%;
+    }
+    .coach-text h3 { 
+        font-size: 28px;
+    }
+    .read-more { 
+        margin-top: 5%;
+        font-size: 34px;
+    }
+    .read-more:nth-child(2) { 
+        margin-top: -100px;
+        font-size: 44px;
+    }       
+
+    .coach-text h4 { 
+        font-size: 40px;
+    }
+    .coach-text h3{ 
+        font-size: 38px;
+    }
+    .coach-text h6 { 
+        font-size: 30px;
+    }
+    .coach-text p { 
+        margin: 5% 5% -4% 5%;
+        font-size: 20px;
+    }
+    .coach-text a { 
+        font-size: 28px;
+        margin-top: 30px;
+    }
+    span { 
+        top: -300px;
+        transition: top 300ms linear;
+    }
+    .nav { 
+        top: 0;
+        transition: top 300ms linear;
+    }
+    .spartanwingslogo { 
+        width: 250px;
+    }
+    header { 
+        position: sticky;
+    }
+    nav { 
+        padding-bottom: 10px;
+    }
+    nav ul li a { 
+        margin-top: 15px;
+        font-size: 20px;
+    }
+   
+
+}
+
+@media(min-width: 992px) { 
+    .coaches-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .spartanwingslogo { 
+        width: 250px;
+    }
+    header { 
+        position: sticky;
+    }
+    nav { 
+        padding-bottom: 10px;
+    }
+    nav ul li a { 
+        margin-top: 15px;
+        font-size: 20px;
+    }
+    .intro-text { 
+        font-size: 95px;
+        margin-top: 10vh;
+    }
+    .intro-button { 
+        margin-top: 30vh;
+        width: 50%;
+        border-radius: 0;
+    }
+    .blaise { 
+        width: 40%;
+    }
+    .yellow-container { 
+        padding-bottom: 20%;
+    }
+    .yellow-container a { 
+        width: 20%;
+        border-radius: 0;
+        font-size: 30px;
+    }
+    .news { 
+        display: grid;
+        padding-top: 0;
+        padding-bottom: 100px;
+    }
+    .news h3 { 
+        font-size: 75px;
+    }
+    .news-container {
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+}
+    .coach-grid { 
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .yellow-container { 
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 0 0 0;
+        padding: 0;
+    }
+    .yellow-container-grid h3{ 
+        margin-top: 10vh;
+        font-size: 65px;
+    }
+    .yellow-container-grid p { 
+        margin: 5vh 10vw 8vh 10vw;
+        font-size: 24px;
+    }
+    .right-side { 
+        margin-left: -20vw;
+    }
+    .right-side a {
+        margin-top: 10vh;
+        width: 50%;
+    }
+    .run { 
+        padding: 50px 0 0 0;
+    }
+    .run h2 {
+        font-size: 70px;
+    }
+    .run p { 
+        font-size: 30px;
+    }
+    .run a {
+        width: 50%;
+    }
+    .run img { 
+        width: 25%;
+        margin-top: -45vh;
+    }
+    .news-article { 
+        font-size: 30px;
+    }
+    .coach-text h4 { 
+        font-size: 45px;
+    }
+    .contact p { 
+        font-size: 20px;
+    }
+    .contact-button { 
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        background-color: #FDC841;
+    }
+    .footer-grid { 
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding-top: 30px;
+        
+    }
+    .foot-grid { 
+        margin-right: 15%;
+        margin-left: 15%;
+    }
+    .footer-spartan { 
+        width: 100%;
+    }
+    .social-media {
+        margin-top: 15%;
+        width: 100%;
+    }
+    .street { 
+        font-size: 20px;
+    }
+  
+    .link-grid { 
+        margin-top: 45px;
+    }
+    .link-container { 
+        font-size: 20px;
+    }
+    .coach-list-li a:nth-child(2) { 
+        margin-top: -25px;
+    }
+    .wings-container { 
+        margin-top: -20px;
+    }
+    .coach-text p { 
+        font-size: 16px;
+        margin: 0 20px;
+    }
+    .coach-text h6 { 
+        font-size: 22px;
+    }
+    
+    
+}
+
+
+
+
+
+
 

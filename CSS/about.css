@@ -1,0 +1,468 @@
+@font-face {
+    font-family: 'tradegothicbold';
+    src: url('/Fonts/Trade\ Gothic\ LT\ Bold\ Condensed\ No.\ 20.ttf.ttf');
+    src: url('/Fonts/TradeGothicLTBoldCondNo20.woff') format('woff2'),
+         url('/Fonts/TradeGothicLTBoldCondNo20.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+} /* TradeGothic LT Condensed Eighteen (Bold) */
+@keyframes slideUp {
+    0% { 
+        transform: translateY(80%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+   
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'tradegothicbold';
+}
+/* CSS for navbar, fill with color and set text size and color */
+header { 
+    display: inline-block;
+    width: 100%;
+    padding: 20px 0px; 
+    background-color: #731D34;
+    position: relative; 
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.42);
+}
+.sticky {    
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+nav { 
+    text-align: right;
+    margin-right: 2%;
+}
+nav ul li { 
+    margin-right: 1%;
+    display: inline-block;
+}
+nav ul li a { 
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+}
+nav ul li a:hover { 
+    color: #D3A04C;
+    transition: 0.5s;
+}
+
+.toggle-btn { 
+    width: 35px; 
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    display: none;
+}
+.toggle-btn span { 
+    width: 90%; 
+    height: 1.5px; 
+    background-color: white;
+    padding: 1.2px;
+    border-radius: 20px;
+    margin-bottom: 5px;
+    float: left;
+    
+}
+
+.spartanwingslogo {
+    position: absolute;
+    left: 20px;
+    width: 50%;
+}
+
+
+@keyframes bounce {
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+.arrow { 
+    width: 10vmin;
+    height: 10vmin;
+    box-sizing: border-box;
+    position: absolute;
+    left: 48%;
+    top: 45%;
+    
+    color: white;
+   
+    animation: bounce 2s infinite;
+}
+.arrow:hover { 
+    fill: #FDC841;
+    transition: 0.3s;
+}
+
+h1 {
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+  }
+ 
+
+
+
+p { 
+    font-family: 'Roboto Condensed', 'sans-serif';
+
+    text-indent: 50px;
+    margin: 10px 0;
+    font-size: 16px;
+
+}
+
+
+h2 { 
+    font-size: 55px;
+    text-align: center;
+} 
+.top-container { 
+    padding-top: 90px;
+    /* 
+    background-image: linear-gradient(rgba(20, 20, 20, 0.712), rgba(15, 15, 15, 0.664)), url(/Images/DSC_0549.JPG);
+    color: white;
+    font-size: 20px;
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-attachment: fixed; */
+    
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    color: white;
+    z-index: -10;
+    background-image: linear-gradient(rgba(20, 20, 20, 0.712), rgba(15, 15, 15, 0.664)), url(/Images/DSC_0549_small.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    
+}
+.active { 
+    color: #D3A04C;
+}
+.top-container-text {
+    margin-top: 5%;
+    animation: 1s ease-out 1 slideUp;
+}
+.top-container-text p { 
+    font-size: 20px;
+    margin: 3% 5%;
+}
+.mission { 
+    text-align: left;
+    font-size: 18px;
+    
+    background-color: white;
+
+}
+.testing { 
+    background-color: white;
+    width: 100%;
+    padding: 40px 0;
+    margin-top: 80vh;
+}
+.mission h2 { 
+    font-size: 48px;
+
+}
+.top-img { 
+    max-width: 900px;
+    width: 20%;
+}
+.yellow-line { 
+    background-color: #FDC841;
+    padding: 2px;
+    border: none;
+}
+.coach-container-maroon {
+    width: 100%;
+    background-color: #731D34;
+}
+.coaches {
+    margin: 0 80px;
+    color: white;
+    padding: 50px 0;
+}
+.coach-line { 
+    margin-top: 20px;
+}
+.coaches h4 { 
+    font-size: 55px;
+    text-align: center;
+    padding-top: 20px;
+}
+.left { 
+    margin-right: 30px;
+}
+.right { 
+    margin-left: 30px;
+}
+.bio h5 { 
+    font-size: 35px;
+    text-align: center;
+}
+
+
+.coach-grid { 
+    margin: 10vh 0 10vh 0;
+    display: flex;
+}
+.coach-pic { 
+    width: 30%;
+}
+.coach-pic:hover { 
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+
+.footer { 
+    background-color: #141414;
+    color: white;
+    text-align: center;
+    margin-bottom: -10px;
+    padding-bottom: 3%;
+}
+.footer-spartan { 
+    width: 55%;
+    margin-top: 25px;
+}
+.footer a { 
+    color: white;
+    text-decoration: none;
+}
+.street { 
+    font-size: 20px;
+}
+.social-media { 
+    margin-top: 5%;
+    margin-bottom: 30px;
+    display: inline-flex;
+}
+.sm { 
+    width: 50%;
+    margin: 0px 20px 0px 20px;
+}
+.link-container {
+    margin-bottom: 15px;
+}
+.footer-link:hover {
+    color: #cfa435;
+    transition: 0.5s;
+}
+
+@media(max-width: 450px) { 
+    nav { 
+        z-index: 999;
+    }
+    nav ul { 
+        position: relative;
+        z-index: 99;
+    }
+    
+    .spartanwingslogo { 
+        width: 200px;
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 991px) { 
+    .active { 
+        background-color: #D3A04C;
+        color: white;
+        padding: 10px 0;
+    }
+    /* Code for navbar */
+    .toggle-btn {
+        display: block;
+    }
+    header { 
+        padding-bottom: 70px;
+    }  
+    .toggle-btn {
+        margin-top: 15px;
+    }
+    nav { 
+        display: none;
+        width: 100%;
+        border-top: 1px solid white;
+        padding-top: 20px;
+        margin-top: 40px;
+    }
+    nav ul {
+        margin: 20px 20px 0px 20px; 
+        padding: 0;
+        transition: .5s; 
+    }
+    nav ul li{
+        padding: 15px 0px; 
+        width: 100%;
+        text-align: center;
+    }
+    nav ul li a { 
+        position: relative; 
+        display: block;  
+        text-decoration: none; 
+        color: white; 
+        transition: .5s; 
+        font-size: 22px;
+    }
+    nav ul li a:hover { 
+        padding: 10px 0px;
+        background: #D3A04C;
+        transition: 0.5s; 
+        color: white;
+    }
+    nav.show { 
+        display: block;
+        margin-top: 70px;
+    }
+    .title-bar { 
+        margin-top: -0.8%;
+    }
+    .spartanwingslogo { 
+        width: 200px;
+        margin-top: 5px;
+    }
+
+    .top-container { 
+        width: 100%;
+        height: 100vh; 
+        background-attachment:scroll;
+    }
+    .mission, .coaches { 
+        margin: 0 20px;
+    }
+    .coach-grid { 
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .coaches { 
+        text-align: left;
+    }
+    .coaches img { 
+        margin: 20px auto;
+        width: 90%;
+
+    }
+    .coach-pic { 
+        width: 80%;
+    }
+    .hide-mobile { 
+        display: none;
+    }
+    .arrow { 
+        left: 45%;
+        top: 60%;
+        width: 15vw;
+        height: 15vh;
+    }
+    .top-container-text { 
+        font-size: 60px;
+        margin-top: 15vh;
+        text-align: center;
+    }
+}
+@media(min-width: 992px) { 
+    .spartanwingslogo { 
+        width: 250px;
+    }
+    header { 
+        position: sticky;
+    }
+    nav { 
+        padding-bottom: 10px;
+    }
+    nav ul li a { 
+        margin-top: 15px;
+        font-size: 20px;
+    }
+    .footer-grid { 
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding-top: 30px;
+        
+    }
+    .foot-grid { 
+        margin-right: 15%;
+        margin-left: 15%;
+    }
+    .footer-spartan { 
+        width: 100%;
+    }
+    .social-media {
+        margin-top: 15%;
+        width: 100%;
+    }
+    .street { 
+        font-size: 20px;
+    }
+    .mission { 
+        padding: 50px 0;
+    }
+    .link-grid { 
+        margin-top: 45px;
+    }
+    .link-container { 
+        font-size: 20px;
+    }
+    .top-container {
+        width: 100%;
+        padding: 0;
+        height: 100vh;
+        margin-top: 80px;
+        
+    }
+    .top-text p { 
+        margin-bottom: 10px;
+    }
+    .mission { 
+        margin: 0 5%;
+    }
+    .show-mobile { 
+        display: none;
+    }
+    .left {
+        float: left;
+    
+    }
+    .coach-grid { 
+        text-align: center;
+    }
+    .coach-pic {
+        height: 100%;
+        float: left;
+        margin-top: 0vh;
+    }
+    .bio {
+        text-align: justify;
+        float: none;
+    }
+    .show-mobile {
+        display: none;
+    }
+}
