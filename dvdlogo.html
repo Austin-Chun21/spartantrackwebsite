@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        @keyframes move { 
+            0% { 
+                top: 0px;
+                left: 0px;
+            }
+            
+            50% { 
+                top: 68.4vh;
+                left: 84.3vw;
+                background-color: red;
+            }
+            60% { 
+                background-color: green;
+            }
+            100% { 
+                top: 0px;
+                left: 0px;
+            }
+        }
+        .logo { 
+            padding: 0;
+            margin: 0;
+            animation: move 5s infinite;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            background-color: red;
+        }
+    </style>
+
+    <div class="logo"></div>
+</body>
+</html>

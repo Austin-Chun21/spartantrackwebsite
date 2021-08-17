@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Links | Spartan Track Club</title>
+    <link rel="stylesheet" href="CSS/links.css">
+    <link rel="icon" href="Images/android-chrome-512x512.png">
+</head>
+<body>
+    <div class="container" ontouchstart>
+        <header class="sticky">
+            <div class="toggle-btn" onclick="myFunction();">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+      
+            <a href="index.html"><img class="spartanwingslogo hide-mobile" src="Images/spartantrackheaderlogo.png" alt=""></a>
+            <!--<a href="#"><img class="show-mobile" src="Images/android-chrome-512x512.png" alt=""></a> -->
+            <nav id='nav'>
+                
+                <ul>
+
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="links.html" class="active">LINKS</a></li>
+                    <li><a href="register.html">REGISTRATION</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="records.html">RECORDS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="quick-links">
+            <h3>Links</h3>
+            <div class="quick-link-grid">
+                <div class="quick-link" onclick="redirect(0)">
+                    
+                        <img src="Images/usatflogo.png" alt="" class="logo">
+                        <h4>USATF Hawaii</h4>
+                        
+                        <p>National organization that hosts sanctioned meets throughout the islands.</p>
+                        <a href="hawaii.usatf.org" class="go-btn">Go Now</a>
+                
+                </div>
+
+                <div class="quick-link" onclick="redirect(1)">
+                    <img src="Images/calendar.png" alt="" class="logo">
+                    <h4>Event Calendar</h4>
+                    
+                    <p>View upcoming meets.</p>
+                    <a class="go-btn" href="https://legacy.usatf.org/calendars/searchResults.asp?city=&state=&country=&associationNumber=39&startDate=&endDate=&eventType=&includeAllAges=ON&distanceSelection=other&distance=&distanceUnits=&distanceComparison=%3D&prizePurse=&name=&series=&submit=Search">Go Now</a>
+                </div>
+
+                <div class="quick-link athcon" onclick="redirect(2)">
+                    <img src="Images/athleticnetlogo.jpg" alt="" class="logo athleticnetlogo">
+                    <h4>Athletic Net</h4>
+                    <p>View meet results and running statistics here.</p>
+                    <a class="go-btn" href="https://www.athletic.net/">Go Now</a>
+                </div>
+
+                <div class="quick-link" onclick="redirect(3)">
+                    <img src="Images/ncsalogo.jpg" class="logo" alt="">
+                    <h4>NSCA College Recruiting</h4>
+                    
+                    <p>Want to run track or cross country in college? Make yourself a recruiting profile here.</p>
+                    <a class="go-btn" href="https://www.ncsasports.org/">Go Now</a>
+                </div>
+
+
+            </div>
+        </div> 
+
+      
+
+        <div class="footer">
+            <div class="footer-grid">
+                <div class="foot-grid">
+                    <div class="footer-element"><img class="footer-spartan" src="Images/spartantrackheaderlogo.png" alt=""></div>
+                    <div class="footer-element"></div>
+                    <div class="footer-element street">Kauhi St, Kapolei, HI 96707</div>
+                </div>
+    
+                <div class="foot-grid social-media">
+                    <div class="footer-element"><a href="https://www.instagram.com/spartantrackclubhi/?utm_" target="_blank"><img class="insta sm" src="Images/instacircle.png" alt=""></a></div>
+                    <div class="footer-element"><a href="https://twitter.com" target="_blank"><img class="twitter sm" src="Images/twittercircle.png" alt=""></a></div>
+                    <div class="footer-element"><a href="https://www.youtube.com/channel/UC34l0mOnor06JhGHe4QOY7g" target="_blank"><img class="youtube sm" src="Images/youtubecircle.png" alt=""></a></div>
+                </div>
+                <div class="foot-grid link-grid">
+                    <div class="footer-element link-container"><a class="footer-link" href="about.html">ABOUT US</a></div>
+                    <div class="footer-element link-container"><a class="footer-link" href="register.html">REGISTRATION</a></div>
+                    <div class="footer-element link-container"><a class="footer-link" href="gallery.html">PHOTO GALLERY</a></div>
+                </div>
+    
+                <div class="foot-grid link-grid">
+                    <div class="footer-element link-container"><a class="footer-link" href="records.html">RECORDS</a></div>
+                    <div class="footer-element link-container"><a class="footer-link" href="links.html">QUICK LINKS</a></div>
+                    <div class="footer-element link-container"><a class="footer-link" href="contact.html">CONTACT US</a></div>
+                </div>
+    
+       
+                </div>
+            </div>
+    </div>
+
+
+    <script type="text/javascript">
+
+        function myFunction() {
+            var navbar = document.getElementById('nav')
+            var header = document.getElementById('header')
+            navbar.classList.toggle('show')
+            header.classList.toggle('showe')
+        }
+    
+    </script>
+
+    <script type="text/javascript">
+        function redirect(numberz) { 
+            if(numberz == 0) {
+                window.open("https://hawaii.usatf.org", "_blank")
+            }
+            else if(numberz == 1) { 
+                window.open("https://legacy.usatf.org/calendars/searchResults.asp?city=&state=&country=&associationNumber=39&startDate=&endDate=&eventType=&includeAllAges=ON&distanceSelection=other&distance=&distanceUnits=&distanceComparison=%3D&prizePurse=&name=&series=&submit=Search", "_blank")
+            }
+            else if(numberz == 2) { 
+                window.open("https://www.athletic.net/", "_blank")
+            }
+            else { 
+                window.open("https://www.ncsasports.org/", "_blank")
+            }
+            
+        }
+    </script>
+</body>
+</html>

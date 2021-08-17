@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Spartan Track Club</title>
+    <link rel="stylesheet" href="CSS/contact.css">
+    <link rel="icon" href="Images/android-chrome-512x512.png">
+</head>
+<body>
+    <div class="container">
+        <header class='sticky'>
+            <div class="toggle-btn" onclick="myFunction();">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+      
+            <a href="#"><img class="spartanwingslogo" src="Images/spartantrackheaderlogo.png" alt=""></a>
+            <nav id='nav'>
+                
+                <ul>
+
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="links.html">LINKS</a></li>
+                    <li><a href="register.html">REGISTRATION</a></li>
+                    <li><a href="gallery.html" class="active">GALLERY</a></li>
+                    <li><a href="records.html">RECORDS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+<!--
+        <div class="contact-text contact-container">
+            
+            <div class="form-container">
+                <form action="" autocomplete="off" method="POST" name="hello-sheet">
+                    <fieldset>
+                        <div class="top-text">
+                            <h3>Contact Us</h3>
+                        <p>Please use the form below to get in touch with us.
+                        </p>
+                        </div>
+                        <h4>Name</h4>
+                        <p><input required autocomplete="off" type="text" placeholder="Bob Joe"></p>
+                        <h4>Email Address</h4>
+                        <p><input required type="text" placeholder="name@mail.com"></p>
+                        <h4>Phone Number</h4>
+                        <p><input required type="text" placeholder="(808) 000-1111"></p>
+                        <h4>Subject</h4>
+                        <p><input required type="text" placeholder="Inquiry"></p>
+                        <h4>Message</h4>
+                        <textarea name="message" id="message" class="message-box" cols="30" rows="10" placeholder="   Enter a message here"></textarea>
+
+                        <div class="submit-container">
+                            <button type="submit" name="submit" value="Send message" id="submit-button" class="submit-btn" onclick="success()">Submit</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+
+
+            
+        </div> -->
+        <div class="form-container">
+            <div class="form">
+                <form action="POST">
+                    <div class="top-text">
+                        <h3>Contact Us</h3>
+                    <p class="subtext">Please use the form below to get in touch with us.
+                    </p>
+                    </div>
+                    <h4>Name</h4>
+                    <p><input required autocomplete="off" type="text" placeholder="Bob Joe"></p>
+                    <h4>Email Address</h4>
+                    <p><input required type="text" placeholder="name@mail.com"></p>
+                    <h4>Phone Number</h4>
+                    <p><input required type="text" placeholder="(808) 000-1111"></p>
+                    <h4>Subject</h4>
+                    <p><input required type="text" placeholder="Inquiry"></p>
+                    <h4>Message</h4>
+                    <textarea name="message" id="message" class="message-box" cols="30" rows="10" placeholder="Enter a message here"></textarea>
+
+                    <div class="submit-container">
+                        <button type="submit" name="submit" value="Send message" id="submit-button" class="submit-btn" onclick="success()">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-grid">
+                <div class="foot-grid">
+                    <div class="footer-element"><img class="footer-spartan" src="Images/spartantrackheaderlogo.png" alt=""></div>
+                    <div class="footer-element"></div>
+                    <div class="footer-element street">Kauhi St, Kapolei, HI 96707</div>
+                </div>
+    
+                <div class="foot-grid social-media">
+                    <div class="footer-element"><a href="https://www.instagram.com/spartantrackclubhi/?utm_" target="_blank"><img class="insta sm" src="Images/instacircle.png" alt=""></a></div>
+                    <div class="footer-element"><a href="https://twitter.com" target="_blank"><img class="twitter sm" src="Images/twittercircle.png" alt=""></a></div>
+                    <div class="footer-element"><a href="https://www.youtube.com/channel/UC34l0mOnor06JhGHe4QOY7g" target="_blank"><img class="youtube sm" src="Images/youtubecircle.png" alt=""></a></div>
+                </div>
+                <div class="foot-grid link-grid">
+                    <div class="footer-element link-container"><a class="footer-link" href="about.html">ABOUT US</a></div>
+                    <div class="footer-element link-container"><a class="footer-link" href="register.html">REGISTRATION</a></div>
+                    <div class="footer-element link-container"><a class="footer-link" href="gallery.html">PHOTO GALLERY</a></div>
+                </div>
+    
+                <div class="foot-grid link-grid">
+                    <div class="footer-element link-container"><a class="footer-link" href="records.html">RECORDS</a></div>
+                    <div class="footer-element link-container"><a class="footer-link" href="links.html">QUICK LINKS</a></div>
+                    <div class="footer-element link-container"><a class="footer-link" href="contact.html">CONTACT US</a></div>
+                </div>
+    
+       
+                </div>
+            </div>
+    
+            </div>
+
+
+    </div>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwhife48bhGAAu1lrhJGIStQ-BrHVT45KpIGTfuKi8PmG7EIrA/exec'
+        const form = document.forms['spartan-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => window.location.href="index.html")
+            .catch(error => console.error('Error!', error.message))
+        })
+</script>
+  
+
+
+    <script type="text/javascript">
+
+        function myFunction() {
+            var navbar = document.getElementById('nav')
+            navbar.classList.toggle('show')
+
+        }
+    
+    </script>
+
+
+    <script>
+        $(document).ready(function() {
+    $('.hover').on('touchstart touchend', function(e) {
+        e.preventDefault();
+        $(this).toggleClass('hover_effect');
+    });
+});
+    </script>
+</body>
+</html>

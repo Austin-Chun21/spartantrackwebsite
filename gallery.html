@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Spartan Track Club</title>
+    <link rel="stylesheet" href="CSS/gallery.css">
+    <link rel="icon" href="Images/android-chrome-512x512.png">
+</head>
+<body ontouchstart>
+    <div class="container">
+        <header class='sticky'>
+            <div class="toggle-btn" onclick="myFunction();">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+      
+            <a href="#"><img class="spartanwingslogo" src="Images/spartantrackheaderlogo.png" alt=""></a>
+            <nav id='nav'>
+                
+                <ul>
+
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="links.html">LINKS</a></li>
+                    <li><a href="register.html">REGISTRATION</a></li>
+                    <li><a href="gallery.html" class="active">GALLERY</a></li>
+                    <li><a href="records.html">RECORDS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+
+            <div class="test">
+                <h3>Photo Gallery</h3>
+                <div class="test-gallery">
+                    <img class="image-slide preview" src="Images/DSC_0346.jpg" onclick="openLightbox();toSlide(1)"  alt="">
+                    <img class="image-slide preview" src="Images/DSC_0776.jpg" onclick="openLightbox();toSlide(2)"  alt="">
+                    <img class="image-slide preview" src="Images/DSC_0849.jpg" onclick="openLightbox();toSlide(3)"  alt="">
+                    <img class="image-slide preview" src="Images/DSC_0645.jpg" onclick="openLightbox();toSlide(4)"  alt="">
+                    <img class="image-slide preview" src="Images/DSC_0839.jpg" onclick="openLightbox();toSlide(5)"  alt="">
+                    <img class="image-slide preview" src="Images/DSC_0038.jpg" onclick="openLightbox();toSlide(6)"  alt="">
+                    <img class="image-slide preview" src="Images/DSC_0895.jpg" onclick="openLightbox();toSlide(7)"  alt="">
+                    <img class="image-slide preview" src="Images/DSC_0362.jpg" onclick="openLightbox();toSlide(8)"  alt="">
+                    <img class="image-slide preview" src="Images/DSC_0722.jpg" onclick="openLightbox();toSlide(9)"  alt="">
+                    <img class="image-slide preview" src="Images/DSC_0895.jpg" onclick="openLightbox();toSlide(10)"  alt="">
+                    <img class="image-slide preview" src="Images/DSC_0639.jpg" onclick="openLightbox();toSlide(11)"  alt="">
+                    <img class="image-slide preview" src="Images/DSC_0325.jpg" onclick="openLightbox();toSlide(12)"  alt="">
+                    <img class="image-slide preview" src="Images/DSC_0038.jpg" onclick="openLightbox();toSlide(13)"  alt="">
+                    <img class="image-slide preview" src="Images/DSC_0776.jpg" onclick="openLightbox();toSlide(14)"  alt="">
+                    <img class="image-slide preview" src="Images/DSC_0378.jpg" onclick="openLightbox();toSlide(15)"  alt="">
+                    <img class="image-slide preview" src="Images/DSC_0821.jpg" onclick="openLightbox();toSlide(16)"  alt="">
+                    <img class="image-slide preview" src="Images/DSC_0023.jpg" onclick="openLightbox();toSlide(17)"  alt="">
+                    <img class="image-slide preview" src="Images/DSC_0742.jpg" onclick="openLightbox();toSlide(18)"  alt="">
+                    <img class="image-slide preview" src="Images/DSC_0080.jpg" onclick="openLightbox();toSlide(19)"  alt="">
+                    <img class="image-slide preview" src="Images/DSC_0492.jpg" onclick="openLightbox();toSlide(20)"  alt="">
+                    <img class="image-slide preview" src="Images/DSC_0023.jpg" onclick="openLightbox();toSlide(21)"  alt="">
+                    <img class="image-slide preview" src="Images/DSC_0178.jpg" onclick="openLightbox();toSlide(22)"  alt="">
+                </div>
+                <div id="Lightbox" class="modal">
+                    <span class="close pointer" onclick="closeLightbox()">&times;</span>
+                    <div class="modal-content">
+                        <div class="slide">
+                            <img class="image-slide" src="Images/DSC_0346.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img class="image-slide" src="Images/DSC_0776.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img class="image-slide long" src="Images/DSC_0849.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img class="image-slide" src="Images/DSC_0645.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img class="image-slide" src="Images/DSC_0839.jpg" alt="">
+                        </div>
+    
+                        <div class="slide">
+                            <img class="image-slide" src="Images/DSC_0038.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img class="image-slide long" src="Images/DSC_0895.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img class="image-slide" src="Images/DSC_0362.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img class="image-slide" src="Images/DSC_0722.jpg" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img class="image-slide long" src="Images/DSC_0895.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img class="image-slide" src="Images/DSC_0639.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img class="image-slide" src="Images/DSC_0325.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img class="image-slide" src="Images/DSC_0038.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img class="image-slide" src="Images/DSC_0776.jpg" alt="">
+                        </div>
+    
+                        <div class="slide">
+                            <img class="image-slide" src="Images/DSC_0378.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img class="image-slide" src="Images/DSC_0821.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img class="image-slide" src="Images/DSC_0023.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img class="image-slide" src="Images/DSC_0742.jpg" alt="">
+                        </div>
+    
+                        <div class="slide">
+                            <img class="image-slide" src="Images/DSC_0080.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img class="image-slide" src="Images/DSC_0492.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img class="image-slide" src="Images/DSC_0023.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img class="image-slide" src="Images/DSC_0178.jpg" alt="">
+                        </div>
+                        
+    
+                        <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
+                        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                        
+                       
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div class="footer-grid">
+                <div class="foot-grid">
+                    <div class="footer-element"><img class="footer-spartan" src="Images/spartantrackheaderlogo.png" alt=""></div>
+                    <div class="footer-element"></div>
+                    <div class="footer-element street">Kauhi St, Kapolei, HI 96707</div>
+                </div>
+    
+                <div class="foot-grid social-media">
+                    <div class="footer-element"><a href="https://www.instagram.com/spartantrackclubhi/?utm_" target="_blank"><img class="insta sm" src="Images/instacircle.png" alt=""></a></div>
+                    <div class="footer-element"><a href="https://twitter.com" target="_blank"><img class="twitter sm" src="Images/twittercircle.png" alt=""></a></div>
+                    <div class="footer-element"><a href="https://www.youtube.com/channel/UC34l0mOnor06JhGHe4QOY7g" target="_blank"><img class="youtube sm" src="Images/youtubecircle.png" alt=""></a></div>
+                </div>
+                <div class="foot-grid link-grid">
+                    <div class="footer-element link-container"><a class="footer-link" href="about.html">ABOUT US</a></div>
+                    <div class="footer-element link-container"><a class="footer-link" href="register.html">REGISTRATION</a></div>
+                    <div class="footer-element link-container"><a class="footer-link" href="gallery.html">PHOTO GALLERY</a></div>
+                </div>
+    
+                <div class="foot-grid link-grid">
+                    <div class="footer-element link-container"><a class="footer-link" href="records.html">RECORDS</a></div>
+                    <div class="footer-element link-container"><a class="footer-link" href="links.html">QUICK LINKS</a></div>
+                    <div class="footer-element link-container"><a class="footer-link" href="contact.html">CONTACT US</a></div>
+                </div>
+    
+       
+                </div>
+            </div>
+
+            
+
+           
+    </div>
+
+    <script>
+        let slideIndex = 1;
+showSlide(slideIndex);
+
+// You are providing the functionality for your clickable content, which is 
+// your previews, dots, controls and the close button.
+
+function openLightbox() {
+  document.getElementById('Lightbox').style.display = 'block';
+}
+
+function closeLightbox() {
+  document.getElementById('Lightbox').style.display = 'none';
+};
+
+// Note that you are assigning new values here to our slidIndex.
+
+function changeSlide(n) {
+  showSlide(slideIndex += n);
+};
+
+function toSlide(n) {
+  showSlide(slideIndex = n);
+};
+
+// This is your logic for the light box. It will decide which slide to show 
+// and which dot is active.
+
+function showSlide(n) {
+  const slides = document.getElementsByClassName('slide');
+  let modalPreviews = document.getElementsByClassName('modal-preview');
+
+  if (n > slides.length) {
+    slideIndex = 1;	
+  };
+  
+  if (n < 1) {
+    slideIndex = slides.length;
+  };
+
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  };
+  
+  for (let i = 0; i < modalPreviews.length; i++) {
+    modalPreviews[i].className = modalPreviews[i].className.replace(' active', '');
+  };
+  
+  slides[slideIndex - 1].style.display = 'block';
+  modalPreviews[slideIndex - 1].className += ' active';
+};
+    </script>
+
+<script type="text/javascript">
+
+    function myFunction() {
+        var navbar = document.getElementById('nav')
+        navbar.classList.toggle('show')
+    }
+
+</script>
+
+
+<script>
+    $(document).ready(function() {
+$('.hover').on('touchstart touchend', function(e) {
+    e.preventDefault();
+    $(this).toggleClass('hover_effect');
+});
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maryknoll Track & Field | Spartan Track Club Hawaii</title>
+    <link rel="stylesheet" href="CSS/maryknolltrack.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a class="spartanlogo-header" href="index.html"><img src="Images/spartantrackheaderlogo.png" alt=""></a>
+            <div class="icon-container">
+                
+                <div class="hamburger-container" id="menuicon">
+
+                    <div class="bar bar1"></div>
+                    <div class="bar bar2"></div>
+                    <div class="bar bar3"></div>
+                </div>
+            </div>
+            <div class="navbar-menu">
+                <hr>
+                <ul class="menu">
+                    
+                    <li class="menu-item">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="about.html">About</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="links.html">Links</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="register.html">Register</a>
+                    </li>
+                    <li class="menu-item active">
+                        <a href="maryknolltrack.html" style="color: #D3A04C">Maryknoll Track</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="records.html">Records</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="intro">
+            <div class="intro-container">
+                
+                <div class="intro-container-stuff">
+                    <div class="intro-text">We Are<br>Spartan Track.
+                        <p style="font-size: 30px;"><br>Hawaii's Premier Track & Field Club</p>
+                    </div>
+                   <a class="intro-button link-test" href="register.html">JOIN NOW</a> 
+                </div>
+                
+            </div>
+            
+            
+        </div>
+
+
+     
+    </div>
+
+    <script>
+        var test = [document.getElementsByClassName('menu-item')];
+        var time = 0.5;
+        function time() { 
+            for(let i=0, len=test.length; i<len; i++) { 
+            test[i] = element.classList.add("transition-delay :" + time + "s");
+
+            }
+        }
+    </script>
+    <script>
+        (function () {
+  const header = document.querySelector('.header');
+	const icon = document.querySelector('.icon-container');
+	icon.onclick = function () {
+		header.classList.toggle('menu-open');
+	}
+}());
+    </script> 
+
+</body>
+
+
+</html>
